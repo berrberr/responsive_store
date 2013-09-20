@@ -15,6 +15,17 @@
   line-height: 35px;
   min-height: 35px; }
 
+@media (min-width: 768px) {
+  .navbar-nav {
+    /* center nav under logo */
+    float: none;
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed; }
+
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    /* only enable hover when not stacked */
+    display: block; } }
 @media (max-width: 767px) {
   .nav-pills > li {
     float: none; }
@@ -39,9 +50,6 @@
   line-height: 50px;
   vertical-align: middle;
   text-align: center; }
-
-ul.nav li.dropdown:hover > ul.dropdown-menu {
-  display: block; }
 
 .dropdown-menu {
   margin-top: 0px;
@@ -105,13 +113,6 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
       .item-box .content .info .price {
         font-size: 0.625em; }
 
-@media (max-width: 1200px) {
-  /* center nav under logo */
-  .navbar-nav {
-    float: none;
-    margin: 0 auto;
-    display: table;
-    table-layout: fixed; } }
 .carousel-inner > .item > img {
   margin: 0 auto; }
 
